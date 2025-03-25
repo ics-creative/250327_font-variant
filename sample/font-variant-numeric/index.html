@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>font-variant-numeric</title>
+  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <style>
+    .font-variant-numeric {
+      font-size: 30px;
+      display: grid;
+      gap: 36px;
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .font-variant-numeric > div:nth-child(1) {
+      font-variant-numeric: diagonal-fractions;
+    }
+    .font-variant-numeric > div:nth-child(2) {
+      font-variant-numeric: slashed-zero;
+    }
+    .font-variant-numeric > div:nth-child(3) {
+      font-variant-numeric: stacked-fractions;
+    }
+  </style>
+</head>
+
+<body>
+<div class="font-variant-numeric">
+  <div>
+    <div class="title">① font-variant-numeric: diagonal-fractions;</div>
+    <p>12/25</p>
+  </div>
+  <div>
+    <div class="title">② font-variant-numeric: slashed-zero;</div>
+    <p>30</p>
+  </div>
+  <div>
+    <div class="title">③ font-variant-numeric: stacked-fractions;</div>
+    <p>10/30</p>
+    <p>12/25</p>
+    <p>16/75</p>
+  </div>
+  <div>
+    <div class="title">④ 指定なし（font-variant-numeric: normal;）</div>
+    <p>12/25</p>
+    <p>30</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>font-variant-emoji</title>
+  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <style>
+    .font-variant-emoji {
+      font-size: 30px;
+      display: grid;
+      gap: 36px;
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .code {
+      font-size: 0.9em;
+      background-color: #d5d5d5;
+      display: inline-block;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    .emoji {
+      display: flex;
+      justify-content: space-around;
+    }
+    .font-variant-emoji > div:nth-child(1) {
+      font-variant-emoji: emoji;
+    }
+    .font-variant-emoji > div:nth-child(2) {
+      font-variant-emoji: text;
+    }
+  </style>
+</head>
+
+<body>
+<div class="font-variant-emoji">
+  <div>
+    <div class="title">① <span class="code">font-variant-emoji: emoji;</span></div>
+    <div class="emoji"><p>☎</p><p>♥</p><p>✈</p></div>
+  </div>
+  <div>
+    <div class="title">② <span class="code">font-variant-emoji: text;</span></div>
+    <div class="emoji"><p>☎</p><p>♥</p><p>✈</p></div>
+  </div>
+  <div>
+    <div class="title">Unicode：<span class="code">U+2665U+FE0E</span>（16進数：<span class="code">&amp;#x2665&amp;FE0E</span>）</div>
+    <div class="emoji"><p>&#x2665;&#xFE0E;</p></div>
+  </div>
+  <div>
+    <div class="title">Unicode：<span class="code">U+2665U+FE0E</span>（16進数：<span class="code">&amp;#x2665&amp;FE0F</span>）</div>
+    <div class="emoji"><p>&#x2665;&#xFE0F;</p></div>
+  </div>
+</div>
+</body>
+</html>

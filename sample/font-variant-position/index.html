@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>font-variant-position</title>
+  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <style>
+    .font-variant-position {
+      font-size: 30px;
+      display: grid;
+      gap: 36px;
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .position-top {
+      font-variant-position: super;
+    }
+    .position-bottom {
+      font-variant-position: sub;
+    }
+  </style>
+</head>
+
+<body>
+<div class="font-variant-position">
+  <div>
+    <div class="title">① font-variant-position: super;</div>
+    <p>CO<span class="position-top">2</span>は二酸化炭素</p>
+  </div>
+  <div>
+    <div class="title">② font-variant-position: sub;</div>
+    <p>H<span class="position-bottom">2</span>Oは酸素</p>
+  </div>
+</div>
+</body>
+</html>

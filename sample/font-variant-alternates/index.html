@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>font-variant-alternates</title>
+  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <style>
+    @font-face {
+      font-family: MonteCarlo;
+      src: url("../fonts/MonteCarlo-Regular.woff2");
+    }
+    @font-feature-values "MonteCarlo" {
+      @swash {
+        fancy: 1;
+      }
+    }
+    .font-variant-alternates {
+      font-size: 30px;
+      display: grid;
+      gap: 36px;
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .font-variant-alternates > div:nth-child(1) .text {
+      font-family: "MonteCarlo", serif;
+      font-variant-alternates: swash(fancy);
+    }
+    .font-variant-alternates > div:nth-child(2) .text {
+      font-family: "MonteCarlo", serif;
+    }
+  </style>
+</head>
+
+<body>
+<div class="font-variant-alternates">
+  <div>
+    <div class="title">① <span class="code">font-variant-alternates: swash()</span></div>
+    <div class="text">こんにちは！　ICS MEDIA　です。</div>
+  </div>
+  <div>
+    <div class="title">② <span class="code">指定なし</span></div>
+    <div class="text">こんにちは！　ICS MEDIA　です。</div>
+  </div>
+</div>
+</body>
+</html>
