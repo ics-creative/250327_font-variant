@@ -4,21 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>font-variant-east-asian: proportional-width;</title>
-  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <link href="../../assets/styles/base.css" rel="stylesheet" type="text/css"/>
   <style>
     .font-variant-east-asian {
       font-size: 30px;
       display: grid;
       gap: 36px;
+    }
+    .text {
       font-family: "kozuka-mincho-pr6n", serif;
-      font-weight: 400;
-      font-style: normal;
     }
-    .title {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .font-variant-east-asian > div:nth-child(2) .text {
+    .proportional-width {
       font-variant-east-asian: proportional-width;
     }
   </style>
@@ -37,13 +33,13 @@
 <body>
 <div class="font-variant-east-asian">
   <div>
-    <div class="title">① <span class="code">font-variant-east-asian: proportional-width;</span></div>
+    <div class="title">① font-variant-east-asian: proportional-width;</div>
     <div class="text">
-      <p>おはよう。３月２４日、ヨロシクお願いします！</p>
+      <p class="proportional-width">おはよう。３月２４日、ヨロシクお願いします！</p>
     </div>
   </div>
   <div>
-    <div class="title">② <span class="code">指定なし</span></div>
+    <div class="title">② 指定なし</div>
     <div class="text">
       <p>おはよう。３月２４日、ヨロシクお願いします！</p>
     </div>

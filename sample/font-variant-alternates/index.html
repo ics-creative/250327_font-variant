@@ -2,34 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>font-variant-alternates</title>
-  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <link href="../../assets/styles/base.css" rel="stylesheet" type="text/css"/>
   <style>
     @font-face {
       font-family: MonteCarlo;
-      src: url("../fonts/MonteCarlo-Regular.woff2");
+      src: url("../../assets/fonts/MonteCarlo-Regular.woff2");
     }
+
     @font-feature-values "MonteCarlo" {
       @swash {
         fancy: 1;
       }
     }
-    .font-variant-alternates {
-      font-size: 30px;
-      display: grid;
-      gap: 36px;
-    }
-    .title {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    .font-variant-alternates > div:nth-child(1) .text {
+    .text {
       font-family: "MonteCarlo", serif;
+    }
+
+    .swash {
       font-variant-alternates: swash(fancy);
-    }
-    .font-variant-alternates > div:nth-child(2) .text {
-      font-family: "MonteCarlo", serif;
     }
   </style>
 </head>
@@ -37,12 +29,20 @@
 <body>
 <div class="font-variant-alternates">
   <div>
-    <div class="title">① <span class="code">font-variant-alternates: swash()</span></div>
-    <div class="text">こんにちは！　ICS MEDIA　です。</div>
+    <div class="title">① font-variant-alternates: swash()</div>
+    <div class="text">
+      <p class="swash">
+        こんにちは！　ICS MEDIA　です。
+      </p>
+    </div>
   </div>
   <div>
-    <div class="title">② <span class="code">指定なし</span></div>
-    <div class="text">こんにちは！　ICS MEDIA　です。</div>
+    <div class="title">② 指定なし</div>
+    <div class="text">
+      <p>
+        こんにちは！　ICS MEDIA　です。
+      </p>
+    </div>
   </div>
 </div>
 </body>

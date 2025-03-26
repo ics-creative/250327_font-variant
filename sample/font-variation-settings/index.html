@@ -2,44 +2,54 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>font-variation-settings</title>
-  <link href="../base.css" rel="stylesheet" type="text/css"/>
+  <link href="../../assets/styles/base.css" rel="stylesheet" type="text/css"/>
   <style>
-    .font-variation-settings {
-      font-size: 30px;
-      display: grid;
-      gap: 36px;
-    }
-    .title {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
     .text {
       font-family: "momochidori-variable", sans-serif;
-      font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
     }
-    .font-variation-settings > div:nth-child(1) .text {
+
+    .wght800 {
       font-variation-settings: "wght" 800;
     }
-    .font-variation-settings > div:nth-child(2) .text {
+
+    .wght100 {
       font-variation-settings: "wght" 100;
     }
-    .font-variation-settings > div:nth-child(3) .text {
-      font-variation-settings:  "ital" 1, "wght" 400, "wdth" 150;
+
+    .ital1-wght400-wdth150 {
+      font-variation-settings: "ital" 1, "wght" 400, "wdth" 150;
     }
-    .font-variation-settings > div:nth-child(4) .text {
-      font-variation-settings:  "wght" 400, "wdth" 10;
+
+    .wght400-wdth10 {
+      font-variation-settings: "wght" 400, "wdth" 10;
     }
   </style>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
           kitId: 'icm6fku',
           scriptTimeout: 3000,
           async: true
         },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h = d.documentElement, t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {
+        }
+      };
+      s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
@@ -48,19 +58,35 @@
 <div class="font-variation-settings">
   <div>
     <div class="title">① font-variation-settings: "wght" 800;</div>
-    <div class="text">こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。</div>
+    <div class="text">
+      <p class="wght800">
+        こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。
+      </p>
+    </div>
   </div>
   <div>
     <div class="title">② font-variation-settings: "wght" 100;</div>
-    <div class="text">こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。</div>
+    <div class="text">
+      <p class="wght100">
+        こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。
+      </p>
+    </div>
   </div>
   <div>
     <div class="title">③ font-variation-settings: "ital" 1, "wght" 400, "wdth" 150;</div>
-    <div class="text">こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。</div>
+    <div class="text">
+      <p class="ital1-wght400-wdth150">
+        こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。
+      </p>
+    </div>
   </div>
   <div>
     <div class="title">④ font-variation-settings: "wght" 400, "wdth" 10;</div>
-    <div class="text">こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。</div>
+    <div class="text">
+      <p class="wght400-wdth10">
+        こんにちは！　ICS MEDIAです。<br>このフォントは百千鳥です。
+      </p>
+    </div>
   </div>
 </div>
 </body>
