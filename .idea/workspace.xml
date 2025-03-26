@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e396f49-57ea-401e-9044-354595dfa532" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/sample/font-variant-emoji-unicode/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/230606_CSS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-alternates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-alternates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-east-asian-traditional/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-east-asian-traditional/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-east-asian-width/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-east-asian-width/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-emoji/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-emoji/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-numeric/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-numeric/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variant-position/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variant-position/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/font-variation-settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample/font-variation-settings/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/fonts/MonteCarlo-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/fonts/NotoSansJP-VariableFont_wght.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/fonts/NotoSansJP-VariableFont_wght.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +87,7 @@
       <workItem from="1713921267118" duration="3194000" />
       <workItem from="1741919081386" duration="15322000" />
       <workItem from="1742371260068" duration="20269000" />
-      <workItem from="1742895534111" duration="5924000" />
+      <workItem from="1742895534111" duration="6781000" />
     </task>
     <servers />
   </component>
