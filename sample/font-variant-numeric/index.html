@@ -6,12 +6,6 @@
   <title>font-variant-numeric</title>
   <link href="../../assets/styles/base.css" rel="stylesheet" type="text/css"/>
   <style>
-    .font-variant-numeric {
-      display: grid;
-      gap: 36px;
-      font-size: 30px;
-    }
-
     .diagonal-fractions {
       font-variant-numeric: diagonal-fractions;
     }
@@ -22,6 +16,12 @@
 
     .stacked-fractions {
       font-variant-numeric: stacked-fractions;
+    }
+
+    .annotation {
+      font-size: 14px;
+      color: #4f4f4f;
+      margin-left: 20px;
     }
   </style>
 </head>
@@ -39,7 +39,7 @@
   <div>
     <h2 class="title">③ font-variant-numeric: stacked-fractions;</h2>
     <p class="stacked-fractions">10/30</p>
-    <p class="stacked-fractions">12/25</p>
+    <p class="stacked-fractions">12/25<span class="annotation">※スラッシュ前後の数字が同じ（2=2）であるため適用されない</span></p>
     <p class="stacked-fractions">16/75</p>
   </div>
   <div>
