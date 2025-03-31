@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>font-variant-alternates</title>
-  <link href="../../assets/styles/base.css" rel="stylesheet" type="text/css"/>
+  <link href="../../assets/styles/base.css" rel="stylesheet" />
   <style>
     @font-face {
       font-family: MonteCarlo;
@@ -16,6 +16,7 @@
         fancy: 1;
       }
     }
+
     .text {
       font-family: "MonteCarlo", serif;
     }
@@ -23,27 +24,29 @@
     .swash {
       font-variant-alternates: swash(fancy);
     }
+
+    .annotation {
+      font-size: 16px;
+      color: #4f4f4f;
+    }
   </style>
 </head>
 
 <body>
 <div class="font-variant-alternates">
   <div>
-    <h2 class="title">① font-variant-alternates: swash()</h2>
-    <div class="text">
-      <p class="swash">
-        こんにちは！　ICS MEDIA　です。
-      </p>
-    </div>
+    <h2 class="title">① font-variant-alternates: swash();</h2>
+    <p class="text swash">こんにちは！　ICS MEDIA　です。</p>
   </div>
   <div>
     <h2 class="title">② 指定なし</h2>
-    <div class="text">
-      <p>
-        こんにちは！　ICS MEDIA　です。
-      </p>
-    </div>
+    <p class="text">こんにちは！　ICS MEDIA　です。</p>
   </div>
+  <span class="annotation">
+    ※フォントは「ICS MEDIA」の部分のみ
+    <a href="https://github.com/googlefonts/monte-carlo">MonteCarlo</a>
+    を使用しています。
+  </span>
 </div>
 </body>
 </html>
